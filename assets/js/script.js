@@ -3,8 +3,10 @@ var timeBlockList = document.querySelector('ul');
 var container = document.querySelector('ul');
 var presentDay = moment().format('MMM Do YY');
 var currentDay = document.getElementById('currentDay');
-var amOrpm = (moment().format('LT').split(""));
-amOrpm = amOrpm[amOrpm.length - 2] + amOrpm[amOrpm.length - 1];
+var amOrpm = moment().format('A')
+// (moment().format('LT').split(""));
+// amOrpm = amOrpm[amOrpm.length - 2] + amOrpm[amOrpm.length - 1];
+console.log(amOrpm + "-------" + moment().format('A'));
 var currentHour = parseInt(moment().format('LT'));
 // Setting global variables
 var element;
